@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Data diri.html" class="w3-bar-item w3-button">Data diri</a>
+    <a href="Pendidikan.html" class="w3-bar-item w3-button">Pendidikan</a>
+    <a href="Pengalaman.html" class="w3-bar-item w3-button">Pengalaman</a>
+  </div>
+
+  <!-- Page Content -->
+  <div style="margin-left:25%">
+    <!DOCTYPE html>
+    <html lang="id">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Pengalaman - Portofolio</title>
+
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f8f5f3;
+          color: #292333;
+        }
+
+        /* SIDEBAR KIRI */
+        .sidebar {
+          width: 25%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #eeeeee;
+          padding: 30px;
+        }
+
+        .sidebar h2 {
+          font-size: 25px;
+          font-weight: normal;
+          margin-bottom: 35px;
+        }
+
+        .sidebar a {
+          display: block;
+          text-decoration: none;
+          color: #292333;
+          padding: 15px;
+          margin-bottom: 8px;
+          border-radius: 6px;
+          font-size: 16px;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+          background-color: #9581bd;
+          color: white;
+        }
+
+        /* BAGIAN ISI */
+        .main {
+          margin-left: 25%;
+          width: 75%;
+          padding: 45px;
+        }
+
+        .label {
+          color: #9581bd;
+          font-size: 13px;
+          font-weight: bold;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+
+        .judul {
+          font-size: 48px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+
+        .judul span {
+          color: #9581bd;
+          font-family: Georgia, serif;
+          font-style: italic;
+        }
+
+        .garis {
+          width: 85px;
+          height: 5px;
+          background-color: #9581bd;
+          margin-bottom: 30px;
+        }
+
+        .deskripsi {
+          color: #77717d;
+          font-size: 15px;
+          line-height: 1.8;
+          margin-bottom: 30px;
+        }
+
+        /* KARTU PENGALAMAN */
+        .experience-card {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          background-color: white;
+          padding: 25px;
+          margin-bottom: 25px;
+          border-radius: 12px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .experience-card img {
+          width: 230px;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .experience-content {
+          flex: 1;
+        }
+
+        .experience-content h2 {
+          font-size: 22px;
+          margin-bottom: 12px;
+        }
+
+        .experience-content p {
+          color: #77717d;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+
+        .kategori {
+          color: #9581bd !important;
+          font-size: 12px !important;
+          font-weight: bold;
+          letter-spacing: 2px;
+          margin-bottom: 12px;
+        }
+
+        /* FOOTER */
+        .footer {
+          margin-top: 40px;
+          padding: 20px;
+          background-color: #e8e0f2;
+          text-align: center;
+          color: #514766;
+          font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 750px) {
+
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 20px;
+          }
+
+          .sidebar h2 {
+            text-align: center;
+          }
+
+          .menu {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .sidebar a {
+            padding: 10px;
+          }
+
+          .main {
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+          }
+
+          .experience-card {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .experience-card img {
+            width: 100%;
+            height: 220px;
+          }
+
+          .judul {
+            font-size: 35px;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <h2>BERANDA</h2>
+
+        <div class="menu">
+
+          <a href="index.html">Beranda</a>
+
+          <a href="data-diri.html">Data Diri</a>
+
+          <a href="pendidikan.html">Pendidikan</a>
+
+          <a href="pengalaman.html" class="active">
+            Pengalaman
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- ISI PENGALAMAN -->
+      <div class="main">
+
+        <p class="label">
+          PENGALAMAN DAN PENCAPAIAN
+        </p>
+
+        <h1 class="judul">
+          My <span>Experience.</span>
+        </h1>
+
+        <div class="garis"></div>
+
+        <p class="deskripsi">
+          Berikut merupakan pengalaman yang pernah saya dapatkan
+          selama menempuh pendidikan. Pengalaman ini menjadi
+          kesempatan bagi saya untuk mengembangkan kemampuan,
+          menambah pengetahuan, dan mempersiapkan diri
+          menghadapi dunia kerja.
+        </p>
+
+        <!-- PENGALAMAN MAGANG -->
+        <div class="experience-card">
+
+          <img src="pkl.jpg" alt="Foto Kegiatan Magang">
+
+          <div class="experience-content">
+
+            <p class="kategori">
+              PRAKTIK KERJA LAPANGAN
+            </p>
+
+            <h2>Pengalaman Magang</h2>
+
+            <p>
+              Sebelum melanjutkan pendidikan ke perguruan tinggi,
+              saya pernah mendapatkan pengalaman praktik kerja
+              lapangan saat sekolah. Melalui kegiatan magang ini,
+              saya belajar mengenal lingkungan kerja,
+              meningkatkan kedisiplinan, bertanggung jawab,
+              serta menerapkan ilmu yang telah dipelajari
+              selama di sekolah.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+        © 2026 MY PORTFOLIO | PERSONAL WEBSITE
+      </div>
+
+  </div>
+
+</body>
+
+</html>

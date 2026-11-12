@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Data diri.html" class="w3-bar-item w3-button">Data diri</a>
+    <a href="Pendidikan.html" class="w3-bar-item w3-button">Pendidikan</a>
+    <a href="Pengalaman.html" class="w3-bar-item w3-button">Pengalaman</a>
+  </div>
+
+  <!-- Page Content -->
+  <div style="margin-left:25%">
+    <!DOCTYPE html>
+    <html lang="id">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Pendidikan - Portofolio</title>
+
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f8f5f3;
+          color: #292333;
+        }
+
+        /* SIDEBAR KIRI */
+        .sidebar {
+          width: 25%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #eeeeee;
+          padding: 30px;
+        }
+
+        .sidebar h2 {
+          font-size: 25px;
+          font-weight: normal;
+          margin-bottom: 35px;
+        }
+
+        .sidebar a {
+          display: block;
+          text-decoration: none;
+          color: #292333;
+          padding: 15px;
+          margin-bottom: 8px;
+          border-radius: 6px;
+          font-size: 16px;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+          background-color: #9581bd;
+          color: white;
+        }
+
+        /* BAGIAN ISI */
+        .main {
+          margin-left: 25%;
+          width: 75%;
+          padding: 45px;
+        }
+
+        .label {
+          color: #9581bd;
+          font-size: 13px;
+          font-weight: bold;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+
+        .judul {
+          font-size: 48px;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+
+        .judul span {
+          color: #9581bd;
+          font-family: Georgia, serif;
+          font-style: italic;
+        }
+
+        .garis {
+          width: 85px;
+          height: 5px;
+          background-color: #9581bd;
+          margin-bottom: 30px;
+        }
+
+        .deskripsi {
+          color: #77717d;
+          font-size: 15px;
+          line-height: 1.8;
+          margin-bottom: 30px;
+        }
+
+        /* KARTU PENDIDIKAN */
+        .education-card {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          background-color: white;
+          padding: 25px;
+          margin-bottom: 22px;
+          border-radius: 12px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .education-card img {
+          width: 220px;
+          height: 160px;
+          object-fit: cover;
+          border-radius: 9px;
+        }
+
+        .education-content {
+          flex: 1;
+        }
+
+        .tahun {
+          color: #9581bd;
+          font-size: 13px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .education-content h2 {
+          font-size: 22px;
+          margin-bottom: 12px;
+        }
+
+        .education-content p {
+          color: #77717d;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+
+        /* FOOTER */
+        .footer {
+          margin-top: 40px;
+          padding: 20px;
+          background-color: #e8e0f2;
+          text-align: center;
+          color: #514766;
+          font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 750px) {
+
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 20px;
+          }
+
+          .sidebar h2 {
+            text-align: center;
+          }
+
+          .menu {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .sidebar a {
+            padding: 10px;
+          }
+
+          .main {
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+          }
+
+          .education-card {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .education-card img {
+            width: 100%;
+            height: 220px;
+          }
+
+          .judul {
+            font-size: 35px;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <h2>BERANDA</h2>
+
+        <div class="menu">
+
+          <a href="index.html">Beranda</a>
+
+          <a href="data-diri.html">Data Diri</a>
+
+          <a href="pendidikan.html" class="active">
+            Pendidikan
+          </a>
+
+          <a href="pengalaman.html">Pengalaman</a>
+
+        </div>
+
+      </div>
+
+      <!-- ISI PENDIDIKAN -->
+      <div class="main">
+
+        <p class="label">
+          PERJALANAN AKADEMIK SAYA
+        </p>
+
+        <h1 class="judul">
+          My <span>Education.</span>
+        </h1>
+
+        <div class="garis"></div>
+
+        <p class="deskripsi">
+          Pendidikan merupakan bagian penting dalam perjalanan
+          hidup saya. Melalui setiap jenjang pendidikan, saya
+          memperoleh pengetahuan, pengalaman, serta kemampuan
+          baru yang membantu saya untuk terus berkembang.
+        </p>
+
+        <!-- SD -->
+        <div class="education-card">
+
+          <img src="sd.jpeg" alt="Foto Sekolah Dasar">
+
+          <div class="education-content">
+
+            <p class="Tahun">2017-2020</p>
+
+            <h2>Sekolah Dasar</h2>
+
+            <p>
+              Saya memulai perjalanan pendidikan di Sekolah
+              Dasar. Pada masa ini, saya mempelajari berbagai
+              pengetahuan dasar, seperti membaca, menulis,
+              berhitung, serta belajar mengenai kedisiplinan
+              dan tanggung jawab.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SMP -->
+        <div class="education-card">
+
+          <img src="smp.jpeg" alt="Foto Sekolah Menengah Pertama">
+
+          <div class="education-content">
+
+            <p class="Tahun">2020-2022</p>
+
+            <h2>Sekolah Menengah Pertama</h2>
+
+            <p>
+              Pada jenjang SMP, saya mendapatkan pengetahuan
+              yang lebih luas. Saya juga belajar meningkatkan
+              rasa percaya diri, bekerja sama, dan
+              mengembangkan kemampuan dalam kegiatan belajar.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SMK -->
+        <div class="education-card">
+
+          <img src="smks.jpeg" alt="Foto Sekolah Menengah Kejuruan">
+
+          <div class="education-content">
+
+            <p class="Tahun">2022-2025</p>
+
+            <h2>Sekolah Menengah Kejuruan</h2>
+
+            <p>
+              Selama menempuh pendidikan di SMK, saya
+              mempelajari pengetahuan dan keterampilan
+              sesuai jurusan yang saya pilih. Saya juga
+              mendapatkan pengalaman praktik kerja lapangan
+              sebagai bekal untuk mengenal dunia kerja.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PERGURUAN TINGGI -->
+        <div class="education-card">
+
+          <img src="kuliah.jpeg" alt="Foto Perguruan Tinggi">
+
+          <div class="education-content">
+
+            <p class="Tahun">2025-2029</p>
+
+            <h2>Perguruan Tinggi</h2>
+
+            <p>
+              Saat ini saya melanjutkan pendidikan ke
+              perguruan tinggi. Saya ingin memperdalam
+              pengetahuan, meningkatkan keterampilan,
+              serta mengembangkan kemampuan untuk
+              mempersiapkan masa depan.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="footer">
+          © 2026 MY PORTFOLIO | PERSONAL WEBSITE
+        </div>
+
+      </div>
+
+    </body>
+
+    </html>

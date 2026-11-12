@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Data diri.html" class="w3-bar-item w3-button">Data diri</a>
+    <a href="Pendidikan.html" class="w3-bar-item w3-button">Pendidikan</a>
+    <a href="Pengalaman.html" class="w3-bar-item w3-button">Pengalaman</a>
+  </div>
+
+  <!-- Page Content -->
+  <div style="margin-left:25%">
+    <!DOCTYPE html>
+    <html lang="id">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Beranda - Portofolio</title>
+
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background: #f8f5f3;
+          color: #292333;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+          width: 245px;
+          height: 100vh;
+          position: fixed;
+          left: 0;
+          top: 0;
+          background: #e8e0f2;
+          padding: 30px 22px;
+        }
+
+        .logo {
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 35px;
+          letter-spacing: 2px;
+        }
+
+        .profil-sidebar {
+          text-align: center;
+          margin-bottom: 35px;
+        }
+
+        .profil-sidebar img {
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 4px solid white;
+        }
+
+        .profil-sidebar h3 {
+          margin-top: 12px;
+        }
+
+        .profil-sidebar p {
+          font-size: 12px;
+          color: #777080;
+          margin-top: 5px;
+        }
+
+        .menu a {
+          display: block;
+          padding: 15px;
+          margin-bottom: 10px;
+          text-decoration: none;
+          color: #393343;
+          border-radius: 8px;
+          transition: 0.3s;
+        }
+
+        .menu a:hover,
+        .menu a.active {
+          background: #9581bd;
+          color: white;
+        }
+
+        /* KONTEN UTAMA */
+        .main {
+          margin-left: 245px;
+          padding: 40px;
+        }
+
+        .label {
+          color: #9581bd;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          margin-bottom: 15px;
+        }
+
+        .judul {
+          font-size: 48px;
+          font-weight: normal;
+          line-height: 1.2;
+          margin-bottom: 15px;
+        }
+
+        .judul span {
+          color: #9581bd;
+          font-family: Georgia, serif;
+          font-style: italic;
+        }
+
+        .garis {
+          width: 65px;
+          height: 4px;
+          background: #9581bd;
+          margin-bottom: 25px;
+        }
+
+        /* HERO */
+        .hero {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 35px;
+          min-height: 350px;
+        }
+
+        .hero-content {
+          flex: 1;
+        }
+
+        .hero-content p {
+          color: #77717d;
+          font-size: 14px;
+          line-height: 1.9;
+          max-width: 500px;
+        }
+
+        .tombol {
+          display: inline-block;
+          margin-top: 25px;
+          padding: 14px 25px;
+          background: #9581bd;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 13px;
+          transition: 0.3s;
+        }
+
+        .tombol:hover {
+          background: #756296;
+        }
+
+        .hero-img {
+          flex: 1;
+          text-align: center;
+        }
+
+        .hero-img img {
+          width: 100%;
+          max-width: 350px;
+          height: 370px;
+          object-fit: cover;
+          border-radius: 150px 150px 15px 15px;
+        }
+
+        /* BAGIAN KEUNGGULAN */
+        .section-title {
+          font-size: 23px;
+          margin-top: 45px;
+          margin-bottom: 20px;
+        }
+
+        .kartu-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 18px;
+        }
+
+        .kartu {
+          background: white;
+          padding: 25px;
+          border-radius: 10px;
+          box-shadow: 0 5px 20px rgba(50, 35, 70, 0.05);
+          transition: 0.3s;
+        }
+
+        .kartu:hover {
+          transform: translateY(-5px);
+        }
+
+        .kartu .icon {
+          font-size: 28px;
+          color: #9581bd;
+          margin-bottom: 15px;
+        }
+
+        .kartu h3 {
+          font-size: 17px;
+          margin-bottom: 12px;
+        }
+
+        .kartu p {
+          color: #77717d;
+          font-size: 13px;
+          line-height: 1.8;
+        }
+
+        .kartu a {
+          display: inline-block;
+          margin-top: 15px;
+          color: #9581bd;
+          font-size: 13px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+          margin-top: 45px;
+          padding: 22px;
+          background: #e8e0f2;
+          text-align: center;
+          color: #514766;
+          font-size: 12px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:850px) {
+          .kartu-container {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media(max-width:750px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+
+          .logo {
+            text-align: center;
+          }
+
+          .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .menu a {
+            padding: 10px;
+          }
+
+          .main {
+            margin-left: 0;
+            padding: 20px;
+          }
+
+          .hero {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .hero-img {
+            width: 100%;
+          }
+
+          .hero-img img {
+            max-width: 100%;
+            height: 300px;
+          }
+
+          .judul {
+            font-size: 35px;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <div class="logo">✳ PORTOFOLIO</div>
+
+        <div class="profil-sidebar">
+          <img src="profil.jpeg" alt="Foto Profil">
+          <h3>SOFI AULIA ROHMAH</h3>
+          <p>STUDENT PORTFOLIO</p>
+        </div>
+
+        <div class="menu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="data-diri.html">Data Diri</a>
+          <a href="pendidikan.html">Pendidikan</a>
+          <a href="pengalaman.html">Pengalaman</a>
+        </div>
+
+      </div>
+
+      <!-- ISI BERANDA -->
+      <div class="main">
+
+        <div class="hero">
+
+          <div class="hero-content">
+
+            <p class="label">HALO, SELAMAT DATANG!</p>
+
+            <h1 class="judul">
+              MY PERSONAL<br>
+              PORTFOLIO <span>Website.</span>
+            </h1>
+
+            <div class="garis"></div>
+
+            <p>
+              Selamat datang di website portofolio pribadi saya.
+              Website ini berisi informasi mengenai data diri,
+              riwayat pendidikan, serta pengalaman yang telah
+              saya dapatkan selama menempuh pendidikan.
+              Melalui portofolio ini, saya ingin memperkenalkan
+              diri dan menunjukkan perjalanan serta kemampuan
+              yang telah saya kembangkan.
+            </p>
+
+            <a href="data-diri.html" class="tombol">
+              LIHAT PROFIL SAYA →
+            </a>
+
+          </div>
+
+          <div class="hero-img">
+            <img src="foto-diri.jpeg" alt="Foto Saya">
+          </div>
+
+        </div>
+
+        <!-- BAGIAN MENU -->
+        <h2 class="section-title">JELAJAHI PORTOFOLIO SAYA</h2>
+
+        <div class="kartu-container">
+
+          <div class="kartu">
+            <div class="icon">✳</div>
+            <h3>Data Diri</h3>
+            <p>
+              Informasi mengenai identitas pribadi,
+              profil singkat, dan informasi diri saya.
+            </p>
+            <a href="data-diri.html">SELENGKAPNYA →</a>
+          </div>
+
+          <div class="kartu">
+            <div class="icon">◎</div>
+            <h3>Pendidikan</h3>
+            <p>
+              Perjalanan pendidikan yang telah saya
+              tempuh dari sekolah hingga perguruan tinggi.
+            </p>
+            <a href="pendidikan.html">SELENGKAPNYA →</a>
+          </div>
+
+          <div class="kartu">
+            <div class="icon">✧</div>
+            <h3>Pengalaman</h3>
+            <p>
+              Pengalaman praktik kerja lapangan,
+              kegiatan UKOM, dan sertifikat kompetensi.
+            </p>
+            <a href="pengalaman.html">SELENGKAPNYA →</a>
+          </div>
+
+        </div>
+
+        <div class="footer">
+          © 2026 MY PORTFOLIO | PERSONAL WEBSITE
+        </div>
+
+      </div>
+
+    </body>
+
+    </html>
